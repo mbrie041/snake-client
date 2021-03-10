@@ -12,7 +12,13 @@ const connect = function() {
     console.log("Data coming back from server...");
     console.log(data);
   })
+  
+  conn.on('connect', () => {
+    conn.write('Name: MJB');
+    console.log("Successfully connected to game server");
+  })
   return conn;
 }
 
 module.exports = { connect }
+
