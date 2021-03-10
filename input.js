@@ -37,6 +37,9 @@ conn = connection;
   if (key === 'd') {
     conn.write('Move: right');
   }
+  if (key === 'r') {
+    conn.write('Say: (⌐■_■)');
+  }
 };
 
 module.exports = {
